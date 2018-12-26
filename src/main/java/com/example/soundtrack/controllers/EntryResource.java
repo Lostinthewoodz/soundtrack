@@ -18,7 +18,7 @@ public class EntryResource {
 
     @POST
     public Entry processEntry(Entry entry) {
-        entry.setText(entry.getText() + " Swag");
+        // TODO: get sentiment
         return entry;
     }
 
