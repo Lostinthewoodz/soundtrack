@@ -1,4 +1,4 @@
-package com.example.soundtrack.models;
+package com.example.soundtrack.model;
 
 import lombok.Data;
 
