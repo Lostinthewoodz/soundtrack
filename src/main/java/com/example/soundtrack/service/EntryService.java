@@ -30,7 +30,7 @@ public class EntryService{
     }
 
     public ToneAnalysis analyzeToneWatson(String text) {
-        ToneAnalyzer toneAnalyzer = new ToneAnalyzer("2016-05-19", options);
+        ToneAnalyzer toneAnalyzer = new ToneAnalyzer("2017-09-21", options);
 
         ToneOptions toneOptions = new ToneOptions.Builder()
                 .text(text)
