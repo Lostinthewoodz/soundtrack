@@ -59,7 +59,7 @@
 		<dependency>
 			<groupId>com.ibm.watson.developer_cloud</groupId>
 			<artifactId>java-sdk</artifactId>
-			<version>6.11.0</version>
+			<version>6.11.1</version>
 		</dependency>
 	</dependencies>
 
