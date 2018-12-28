@@ -2,6 +2,7 @@ package com.example.soundtrack.controller;
 
 import com.example.soundtrack.model.Entry;
 import com.example.soundtrack.service.EntryService;
+import com.ibm.watson.developer_cloud.tone_analyzer.v3.model.ToneAnalysis;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -32,10 +33,10 @@ public class EntryResource {
         return entry;
     }
 
-    @GET
+    @POST
     @Path("test-watson")
-    public void testWatson() {
-        entryService.testWatson();
+    public ToneAnalysis analyzeToneWatson(Entry entry) {
+        return entryService.analyzeToneWatson(entry.getText());
     }
 
 }

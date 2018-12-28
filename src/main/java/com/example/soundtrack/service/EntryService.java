@@ -29,19 +29,16 @@ public class EntryService{
         return entry;
     }
 
-    public void testWatson() {
+    public ToneAnalysis analyzeToneWatson(String text) {
         ToneAnalyzer toneAnalyzer = new ToneAnalyzer("2016-05-19", options);
-        String text = "Team, I know that times are tough! Product "
-                + "sales have been disappointing for the past three "
-                + "quarters. We have a competitive product, but we "
-                + "need to do a better job of selling it!";
-
 
         ToneOptions toneOptions = new ToneOptions.Builder()
                 .text(text)
                 .build();
 
         ToneAnalysis toneAnalysis = toneAnalyzer.tone(toneOptions).execute();
+
+        return toneAnalysis;
     }
 
 }
